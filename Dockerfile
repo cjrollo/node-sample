@@ -1,4 +1,5 @@
 FROM node:argon
+MAINTAINER rollo
 
 # Create app directory
 RUN mkdir -p /usr/src/app
@@ -11,5 +12,5 @@ RUN npm install
 # Bundle app source
 COPY . /usr/src/app
 
-EXPOSE 1337 
+EXPOSE 1337
 CMD [ "npm", "start" ]
