@@ -15,8 +15,11 @@ This is a sample node JS project. It uses the Express JS and the Moment JS libra
 5. push the changes
   git add... git commit... git push...
 6. check the build (should be kicked automatically) for errors
-7. run the built image
+7. pull the newly built image (code is loaded inside container)
+> docker pull rollo/node-sample
+
+8. run the built image
 > docker run -d -p 1337:1337 --name node-sample rollo/node-sample
 
-8. Test it
+9. Test it
 > open http://192.168.99.100:1337
