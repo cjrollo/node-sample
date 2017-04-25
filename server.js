@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 var products = [
   {"id": 1, "name": "Apples"},
   {"id": 2, "name": "Pears"},
-  {"id": 3, "name": "Lemons"}
+  {"id": 3, "name": "Lemons"},
   {"id": 4, "name": "Limes"}
 ];
 
