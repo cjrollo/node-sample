@@ -5,8 +5,3 @@ ID=$(docker build  -t ${IMAGE}  .  | tail -1 | sed 's/.*Successfully built \(.*\
 
 docker tag ${ID} ${IMAGE}:${VERSION}
 docker tag ${ID} ${IMAGE}:latest
-
-docker login -u $DOCKER_USER -p $DOCKER_PWD -e rollo.nike@gmail.com
-
-docker push ${IMAGE}:${VERSION}
-docker push ${IMAGE}:latest
